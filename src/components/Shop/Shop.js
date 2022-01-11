@@ -4,7 +4,7 @@ import React from 'react';
 import './Shop.css';
 
 const Shop = (props) => {
-    const {img, name, seller, price, star, stock, features} = props.product;
+    const {img, name, seller, price,  stock, features} = props.product;
     return (
         <div className="row shop-show-card">
             <div className="col-md-4">
