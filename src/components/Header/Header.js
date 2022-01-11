@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import loto from '../../images/logo.png'
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -15,9 +16,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link className="link-header-tag" href="/home">Shop</Nav.Link>
-                            <Nav.Link className="link-header-tag" href="/review">Order Review</Nav.Link>
-                            <Nav.Link className="link-header-tag" href="/manage">Manage Inventory here</Nav.Link>
+                            <Link className="link-header-tag" href="/home">Shop</Link>
+                            <Link className="link-header-tag" href="/review">Order Review</Link>
+                            <Link className="link-header-tag" href="/manage">Manage Inventory here</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
