@@ -1,0 +1,18 @@
+.header-search{
+    display: flex;
+    background-color: rgb(70, 70, 70);
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+.header-search input {
+    width: 80%;
+    margin-right: 2%;
+}
+
+.shop-container{
+    border-right: 1px solid tomato;
+}
+.cart-container{
+    text-align: center;
+}

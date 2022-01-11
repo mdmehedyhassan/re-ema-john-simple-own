@@ -1,0 +1,16 @@
+.shop-show-card{
+    margin:0 5px 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid tomato;
+}
+.feature-description{
+    color: gray;
+    font-weight: 400;
+}
+.feature-value{
+    font-weight: 700;
+}
+.product-name{
+    color: rgb(57, 57, 240);
+    font-weight: 400;
+}
