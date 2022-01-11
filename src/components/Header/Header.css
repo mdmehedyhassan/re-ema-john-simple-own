@@ -1,16 +1,14 @@
 nav ul{
     background-color: black;
-    height: 45px;
-    
 }
-nav ul a{
+.link-header-tag{
     text-decoration: none;
     padding: 0 10px;
     margin: 0 5px;
-    color: white;
+    color: white !important;
     font-size: 30px;
 }
-nav ul a:hover{
+.link-header-tag:hover{
     background-color: darkgray;
     color:black;
 }
