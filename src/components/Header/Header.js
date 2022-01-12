@@ -13,7 +13,7 @@ const Header = () => {
             <Navbar bg="dark" expand="lg">
                 <Container>
                     <Link className="link-header-tag" to="/">ema-John</Link>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle className="bg-light" aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Link className="link-header-tag" to="/home">Shop</Link>

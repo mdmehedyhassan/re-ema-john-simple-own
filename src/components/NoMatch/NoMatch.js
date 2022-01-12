@@ -1,10 +1,11 @@
 import React from 'react';
+import NoMatch404 from '../../images/noMatch404.gif';
 
 
 const NoMatch = () => {
     return (
-        <div>
-            <h1>404 Page Not Found</h1>
+        <div className="text-center">
+            <img className="h-50" src={NoMatch404} alt=""/>
         </div>
     );
 };
