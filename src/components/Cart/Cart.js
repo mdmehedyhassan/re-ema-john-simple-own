@@ -1,6 +1,7 @@
 import { faCalendarCheck, faHistory } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -57,7 +58,7 @@ const Cart = (props) => {
                     <h4>${(totalPrice).toFixed(2) || 0}</h4>
                 </div>
                 {
-                    props.home ? <a style={{ textDecoration: 'none', color: 'black' }} href="/review"><button><FontAwesomeIcon icon={faHistory} /> Review your order</button></a> :
+                    props.home ? <Link style={{ textDecoration: 'none', color: 'black' }} to="/review"><button><FontAwesomeIcon icon={faHistory} /> Review your order</button></Link> :
                     <button onClick={()=> props.handlePlaceOrder()}><FontAwesomeIcon icon={faCalendarCheck} /> Place order</button>
                 }
             </div>

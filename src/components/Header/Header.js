@@ -19,6 +19,7 @@ const Header = () => {
                             <Link className="link-header-tag" to="/home">Shop</Link>
                             <Link className="link-header-tag" to="/review">Order Review</Link>
                             <Link className="link-header-tag" to="/manage">Manage Inventory here</Link>
+                            <a className="link-header-tag" href="https://github.com/mdmehedyhassan/re-ema-john-simple-own">GitHub code</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
