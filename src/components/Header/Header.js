@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import loto from '../../images/logo.png'
+import logo from '../../images/logo.png'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -8,11 +8,11 @@ const Header = () => {
     return (
         <div>
             <div className="text-center">
-                <img style={{ height: '80px' }} src={loto} alt="" />
+                <img style={{ height: '80px' }} src={logo} alt="" />
             </div>
             <Navbar bg="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand className="link-header-tag" to="/">ema-John</Navbar.Brand>
+                    <Link className="link-header-tag" to="/">ema-John</Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">

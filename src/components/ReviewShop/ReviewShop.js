@@ -1,16 +1,19 @@
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './ReviewShop.css'
 
 const ReviewShop = (props) => {
-    const {name, seller, price} = props.product;
+    const {name, seller, price, quantity} = props.product;
+    console.log(props.product, props.product.quantity)
     return (
         <div className="row shop-show-card">
             <h4 className="product-name">{name}</h4>
             <div className="col-md-6">
                 <h3 className="mt-4 mb-2">${price}</h3>
                 <h3><small>sold by: {seller}</small></h3>
-                <h3>Quantity: 1</h3>
-                <button onClick={() => props.removeProduct(props.product)}>Remove</button>
+                <h3>Quantity: {quantity || 1}</h3>
+                <button onClick={() => props.removeProduct(props.product)}><FontAwesomeIcon icon={faTrashAlt} /> Remove</button>
             </div>
             <div className="col-md-6">
                 <h5>Shipping options</h5>

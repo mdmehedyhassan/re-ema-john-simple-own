@@ -1,11 +1,16 @@
+import { faCalendarCheck, faHistory } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Cart = (props) => {
     const cart = props.cart;
     let total = 0;
+    let productQuantity = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        total += product.price;
+        productQuantity += product.quantity;
+        const sumQuantity =  product.price * product.quantity;
+        total =  total + sumQuantity ;
     }
 
     let shipping = 0;
@@ -29,7 +34,7 @@ const Cart = (props) => {
     return (
         <div className="cart-container">
             <h3>Order Summary</h3>
-            <h5>Items ordered: {cart.length || 0}</h5>
+            <h5>Items ordered: {productQuantity}</h5>
             <div className="text-start">
                 <div className="d-flex justify-content-between">
                     <h5>Items: </h5>
@@ -52,8 +57,8 @@ const Cart = (props) => {
                     <h4>${(totalPrice).toFixed(2) || 0}</h4>
                 </div>
                 {
-                    props.home ? <a style={{ textDecoration: 'none', color: 'black' }} href="/review"><button>Review your order</button></a> :
-                    <button onClick={()=> props.handlePlaceOrder()}>Place order</button>
+                    props.home ? <a style={{ textDecoration: 'none', color: 'black' }} href="/review"><button><FontAwesomeIcon icon={faHistory} /> Review your order</button></a> :
+                    <button onClick={()=> props.handlePlaceOrder()}><FontAwesomeIcon icon={faCalendarCheck} /> Place order</button>
                 }
             </div>
         </div>

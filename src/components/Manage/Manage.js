@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const Manage = () => {
     return (
-        <div>
-            <h1>this is manage</h1>
+        <div className="container">
+            <Header></Header>
+            <h1 className="text-center">Developers are Sleeping!</h1>
         </div>
     );
 };
